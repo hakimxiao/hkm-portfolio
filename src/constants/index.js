@@ -107,7 +107,7 @@ export const myProjects = [
       border: '0.2px solid #17293E',
       boxShadow: '0px 0px 60px 0px #2F6DB54D',
     },
-    spotlight: '/assets/spotlight2.png',
+    spotlight: 'assets/spotlight2.png',
     tags: [
       {
         id: 1,
@@ -183,7 +183,7 @@ export const myProjects = [
       border: '0.2px solid #0E2D58',
       boxShadow: '0px 0px 60px 0px #2F67B64D',
     },
-    spotlight: '/assets/spotlight4.png',
+    spotlight: 'assets/spotlight4.png',
     tags: [
       {
         id: 1,
@@ -213,14 +213,14 @@ export const myProjects = [
     subdesc:
       'Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.',
     href: 'https://www.youtube.com/watch?v=Ahwoks_dawU',
-    texture: '/textures/project/project5.mp4',
+    texture: 'textures/project/project5.mp4',
     logo: 'assets/project-logo5.png',
     logoStyle: {
       backgroundColor: '#1C1A43',
       border: '0.2px solid #252262',
       boxShadow: '0px 0px 60px 0px #635BFF4D',
     },
-    spotlight: '/assets/spotlight5.png',
+    spotlight: 'assets/spotlight5.png',
     tags: [
       {
         id: 1,
