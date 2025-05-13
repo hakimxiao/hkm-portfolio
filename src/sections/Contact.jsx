@@ -71,7 +71,7 @@ const Contact = () => {
       {alert.show && <Alert {...alert} />}
 
       <div className="relative min-h-screen flex items-center justify-center flex-col">
-        <img src="/assets/terminal.png" alt="terminal-bg" className="absolute inset-0 min-h-screen" loading='lazy' />
+        <img src="assets/terminal.png" alt="terminal-bg" className="absolute inset-0 min-h-screen" loading='lazy' />
 
         <div className="contact-container">
           <h3 className="head-text">Let’s talk</h3>
@@ -124,7 +124,7 @@ const Contact = () => {
             <button className="field-btn" type="submit" disabled={loading}>
               {loading ? 'Sending...' : 'Send Message'}
 
-              <img src="/assets/arrow-up.png" alt="arrow-up" className="field-btn_arrow" />
+              <img src="assets/arrow-up.png" alt="arrow-up" className="field-btn_arrow" />
             </button>
           </form>
         </div>

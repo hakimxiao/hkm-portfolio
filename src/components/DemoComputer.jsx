@@ -10,28 +10,28 @@
         * ini untuk membuat video tidak terbalik
 */
 
-import  { useEffect, useRef } from 'react'
-import { useGLTF,  useVideoTexture } from '@react-three/drei'
+import { useEffect, useRef } from 'react'
+import { useGLTF, useVideoTexture } from '@react-three/drei'
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 
 const DemoComputer = (props) => {
   const group = useRef()
-  const { nodes, materials } = useGLTF('/models/computer.glb');
+  const { nodes, materials } = useGLTF('models/computer.glb');
   const txt = useVideoTexture(props.texture ? props.texture : 'textures/project/project1.mp4');
 
-    useEffect(() => {
-        if(txt) {
-            txt.flipY = false;
-        }
-    })
+  useEffect(() => {
+    if (txt) {
+      txt.flipY = false;
+    }
+  })
 
   useGSAP(() => {
-      gsap.from(group.current.rotation, {
-        y: Math.PI / 2,
-        duration: 1,
-        ease: 'power3.out'
-      })
+    gsap.from(group.current.rotation, {
+      y: Math.PI / 2,
+      duration: 1,
+      ease: 'power3.out'
+    })
   }, [txt])
 
   return (
@@ -47,7 +47,7 @@ const DemoComputer = (props) => {
           rotation={[1.571, -0.005, 0.031]}
           scale={[0.661, 0.608, 0.401]}
         >
-            <meshBasicMaterial map={txt}/>
+          <meshBasicMaterial map={txt} />
         </mesh>
         <group
           name="RootNode"
@@ -1022,6 +1022,6 @@ const DemoComputer = (props) => {
   )
 }
 
-useGLTF.preload('/models/computer.glb')
+useGLTF.preload('models/computer.glb')
 
 export default DemoComputer;
